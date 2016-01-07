@@ -13,7 +13,7 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SM/SMUELLER/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/S/SM/SMUELLER/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	bfed85ce503f6a2222b6ddd5cf7c41bc
 URL:		http://search.cpan.org/dist/AutoXS-Header/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -26,8 +26,8 @@ This module is a simple container for the newest version of the AutoXS
 header file AutoXS.h.
 
 %description -l pl.UTF-8
-Moduł ten jest prostym pojemnikiem na najnowsze wersje plików
-nagłówkowych AutoXS.
+Moduł ten jest prostym pojemnikiem na najnowszą wersję pliku
+nagłówkowego AutoXS o nazwie AutoXS.h.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -52,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %dir %{perl_vendorlib}/AutoXS
-%{perl_vendorlib}/AutoXS/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/AutoXS/Header.pm
+%{_mandir}/man3/AutoXS::Header.3pm*
