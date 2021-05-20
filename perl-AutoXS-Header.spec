@@ -14,9 +14,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/S/SM/SMUELLER/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	bfed85ce503f6a2222b6ddd5cf7c41bc
-URL:		http://search.cpan.org/dist/AutoXS-Header/
+URL:		https://metacpan.org/release/AutoXS-Header
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
