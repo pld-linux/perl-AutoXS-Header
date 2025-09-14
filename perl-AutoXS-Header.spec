@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define	pdir	AutoXS
 %define	pnam	Header
@@ -12,9 +12,9 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/S/SM/SMUELLER/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/authors/id/S/SM/SMUELLER/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	bfed85ce503f6a2222b6ddd5cf7c41bc
-URL:		https://metacpan.org/release/AutoXS-Header
+URL:		https://metacpan.org/dist/AutoXS-Header
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
